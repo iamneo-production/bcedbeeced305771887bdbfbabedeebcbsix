@@ -51,6 +51,7 @@ public class Homepage{
         logger.debug("This is debug message");
         logger.error( "This is error message");
         logger.fatal("This is fatal message");
+        
     }
 
     @When("^I input the text \"([^\"]*)\" into the search box$")
