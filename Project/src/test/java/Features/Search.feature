@@ -14,9 +14,9 @@ Feature: Testing ELC Website Functionality
     Then I verify the total number of results found based on the selected price range
 
   Scenario: Filter products by brand in "Offers" > "Wooden Toys"
-    Given I am on ELC Application for click
-    When I click on the "Offers" menu
-    And I scroll down until I reach the "Brands" filter
-    And I click on the "Show more" link
-    And I click the checkbox of "Paw patrol"
-    Then I verify whether the name of the chosen brand is available on the page
+  Given I am on ELC Application for click
+  When I click on the "Offers" menu
+  And I scroll down until I reach the "Brands" filter
+  And I click on the "Show more" link
+  And I click the checkbox of "Paw patrol"
+  Then I verify whether the name of the chosen brand is available on the page

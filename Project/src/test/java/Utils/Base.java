@@ -1,5 +1,4 @@
 package Utils;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -17,6 +16,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -54,7 +54,7 @@ public class Base
 		{
 		DesiredCapabilities dc=new DesiredCapabilities();
 			dc.setBrowserName("chrome");
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/"), dc);
+			driver = new RemoteWebDriver(new URL("http://34.85.201.58:4499"), dc);
 		}
 		else if(browsername.equalsIgnoreCase("firefox")){
 			WebDriverManager.firefoxdriver().setup();
